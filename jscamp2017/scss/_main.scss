@@ -1,0 +1,137 @@
+/* Variables
+----------------------------------*/
+$swred : #4cc220;
+$swblue : #16A1E3;
+$body-color: #fff;
+
+
+
+/* Base styles & helpers
+--------------------------------- */
+html,body {
+  height:100vh;
+}
+
+body {
+  font-family:"sofia-pro","Helvetica", "Arial", sans-serif;
+  font-size:1em;
+  font-weight:100;
+  background:$body-color;
+  color:#222;
+  line-height:1.6;
+}
+
+body.home {
+  background-image:url(img/bk_header.png), radial-gradient(55% 106%, #5BD12D 3%, #27750A 100%);
+  background-position:50% 50%;
+  background-size:cover;
+  background-attachment: fixed;
+}
+
+a, a:visited {
+  color:$swred;
+  text-decoration:none;
+  transition:color 0.2s;
+  &:hover {
+    text-decoration:underline;
+  }
+}
+
+*, *:after, *:before {
+ @include border-box;
+}
+
+img {
+ width: auto;
+ max-width: 100%;
+ border-radius: 2px;
+}
+
+p {
+  margin:0 0 1.3em;
+}
+
+ul {
+  margin:0;
+  padding-left:15px;
+  li {
+    margin-bottom:0.5em;
+  }
+}
+
+hr {
+  border:none;
+  background:#ddd;
+  height:1px;
+  margin:3em 0;
+}
+
+.red {
+  color:$swred;
+}
+
+.blue {
+  color:$swblue;
+}
+
+.center {
+  text-align: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.block {
+    width:90%;
+    max-width:1200px;
+    margin:0 auto;
+    position:relative;
+}
+
+.block:before,
+.block:after {
+    content: " ";
+    display: table;
+}
+
+.block:after {
+    clear: both;
+}
+
+.button, .button:visited {
+  display:inline-block;
+  padding:13px 35px;
+  text-transform: uppercase;
+  border:1px solid $swred;
+  font-size:1em;
+  line-height:1.1;
+  border-radius: 2px;
+  -webkit-transition:background-color 0.3s;
+  transition:background-color 0.3s;
+  &:hover {
+    text-decoration:none;
+  }
+}
+
+.button-action, .button-action:visited {
+  @extend .button;
+  color:#fff;
+  background:$swred;
+  font-weight:500;
+  font-size:1em;
+  padding:17px 40px;
+  &:hover {
+    background-color:darken($swred,7%);
+  }
+}
