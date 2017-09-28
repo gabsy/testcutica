@@ -10,7 +10,7 @@
   </section>-->
   <section class="schedule">
                     <div class="block">
-                        <h2>Conference Schedule<span class="red-bullet">.</span> <span class="tagline">September 19, 2017</span></h2>
+                        <h2>Conference Schedule<span class="red-bullet">.</span> <span class="tagline">plm</span></h2>
                         
                         <ul class="schedule-table clearfix">
                             <li><dl>
