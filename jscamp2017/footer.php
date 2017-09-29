@@ -3,6 +3,7 @@
       get_template_part('sponsors');
     }
  ?>
+ <!-- ce faci ? -->
 <!-- BEGIN .newsletter -->
 <section class="newsletter">
   <div class="block">
